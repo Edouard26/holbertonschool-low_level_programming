@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 
 /* function random digit with conditions */
@@ -11,15 +12,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		print(n "is positive");
+		printf(n "is positive");
 	}
 	if (n == 0)
 	{
-		print(n "is zero");
+		printf(n "is zero");
 	}
 	if (n < 0)
 	{
-		print(n "is negative");
+		printf(n "is negative");
 	}
 
 	/* your code goes there */
