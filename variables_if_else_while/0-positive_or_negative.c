@@ -10,11 +10,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		print(n "is positive")
+	{
+		print(n "is positive");
+	}
 	if (n == 0)
-		print(n "is zero")
+	{
+		print(n "is zero");
+	}
 	if (n < 0)
-		print(n "is negative")
+	{
+		print(n "is negative");
+	}
 
 	/* your code goes there */
 	return (0);
