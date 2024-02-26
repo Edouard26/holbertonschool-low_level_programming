@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * int _isupper(int c) - uppercase
+ * _isupper - uppercase
+ * @c: (int) character to check
  * Return: 1 or 0
  */
 
