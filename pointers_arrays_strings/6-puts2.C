@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * puts2 - Prints every other character
  * @str: (char) text
