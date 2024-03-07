@@ -22,13 +22,13 @@ int _sqrt_recursion(int n)
 
 int _sqrt_recursion_2(int n, int s)
 {
-	if ((s * s) == n)
-	{
-		return (s);
-	}
 	if ((s * s) > n)
 	{
 		return (-1);
+	}
+	if ((s * s) == n)
+	{
+		return (s);
 	}
 	return (_sqrt_recursion_2(n, (s + 1)));
 }
