@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * *_strdup - returns a pointer to a new string
@@ -15,8 +14,6 @@ char *_strdup(char *str)
 	char *new_str;
 
 	if (str == NULL)
-
-	int length = (strlen(str) + 1)
 	{
 		return (NULL);
 	}
@@ -58,7 +55,7 @@ int _strlen(char *str)
  * Return: dest
  */
 
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 
 {
 	int i = 0;
