@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "dog.h"
-#include "main.h"
 #include "4-new_dog.c"
 
 /**
