@@ -1,6 +1,6 @@
 #ifndef FUNC_VARIAD
 #define FUNC_VARIAD
-
+#include <stdarg.h>
 int _putchar(char c);
 
 int sum_them_all(const unsigned int n, ...);
