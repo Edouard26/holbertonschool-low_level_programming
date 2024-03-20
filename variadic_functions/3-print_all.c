@@ -53,8 +53,10 @@ void print_string(va_list args)
 {
 	char *str = va_arg(args, char *);
 	if (str == NULL)
+	{
 		printf("(nil)");
-	else
+	return;
+	}
 		printf("%s", str);
 }
 
@@ -67,6 +69,8 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, ii;
+	char *sep = "";
+
 	print_format_t types[] = 
 	{
 		{'c', print_char},
@@ -85,9 +89,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[ii].letter)
 			{
+				printf("%s", sep);
 				types[ii].func(args);
-				if (format[i + 1] != '\0' && (format[i + 1] == 'c' || format[i + 1] == 'i' || format[i + 1] == 'f' || format[i + 1] == 's'))
-					printf(", ");
+				sep = ", ";
+					
 				break;
 			}
 			ii++;
