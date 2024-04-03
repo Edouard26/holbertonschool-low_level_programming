@@ -4,7 +4,8 @@
 /**
  * print_list - prints all the elements of a list
  * @list_t: list
- * @h: pointer 
+ * @h: pointer
+ * Return: count
  */
 
 size_t print_list(const list_t *h)
@@ -12,22 +13,15 @@ size_t print_list(const list_t *h)
 	const list_t *current = h;
 	size_t count = 0;
 
-	printf("[");
 	while (current != NULL)
 	{
-		if (current ->str != NULL)
-			printf("%s", current->str);
+		if (current->str != NULL)
+			printf("[%u] %s\n", current->len, current->str);
 		else
-			printf("(nil)");
+			printf("[0] (nil)\n");
 
 		count++;
 		current = current->next;
-
-		if (current != NULL)
-			printf(", ");
 	}
-	printf("]\n");
-
-	return count;
+	return (count);
 }
-	
