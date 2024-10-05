@@ -1,1 +1,4 @@
-This is the second project of the week, it is about variadic functions
+
+    What are variadic functions
+    How to use va_start, va_arg and va_end macros
+    Why and how to use the const type qualifier
