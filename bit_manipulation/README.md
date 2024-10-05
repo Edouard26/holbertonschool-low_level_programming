@@ -1,1 +1,3 @@
-It is a repository about how to manipulate bits and use bitwise operators
+
+    Look for the right source of information without too much help
+    How to manipulate bits and use bitwise operators
